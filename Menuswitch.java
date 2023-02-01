@@ -28,7 +28,10 @@ public class Menuswitch {
 							System.out.println("2. Área");
 							System.out.println("3. Diagonal");
 							System.out.println("¿Qué propiedad desea?");
-							int propiedad = scan.nextInt();
+							String prop;
+							int propiedad;
+							prop = scan.nextLine();
+							propiedad = Integer.parseInt(prop);
 							if(propiedad == 1) {
 								System.out.println("El perímetro vale: "+uno.calculaPerimetro());
 							}
@@ -51,7 +54,10 @@ public class Menuswitch {
 							System.out.println("2. Área");
 							System.out.println("3. Perímetro");
 							System.out.println("¿Qué propiedad desea?");
-							int eleccion = scan.nextInt();
+							String choice;
+							int eleccion;
+							choice = scan.nextLine();
+							eleccion = Integer.parseInt(choice);
 							if(eleccion == 1) {
 								System.out.println("La circunferencia vale: "+one.calculaCircunferencia());
 							}
